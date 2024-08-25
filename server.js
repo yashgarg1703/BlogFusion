@@ -22,7 +22,7 @@ const errorHandler = require("./middlewares/error-handling-midware")
 
 var corsOptions = {
     //  origin: 'http://localhost:5173'
-    origin: 'https://earnest-squirrel-48b519.netlify.app',
+    origin: 'https://fastidious-figolla-3bdb99.netlify.app',
     methods:'POST,GET,DELETE,PATCH,HEAD,PUT',
     credentials:true
   }
