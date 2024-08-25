@@ -21,7 +21,8 @@ var cors = require('cors')
 const errorHandler = require("./middlewares/error-handling-midware")
 
 var corsOptions = {
-    origin: 'http://localhost:5173',
+    //  origin: 'http://localhost:5173'
+    origin: 'https://deft-trifle-2d4a63.netlify.app',
     methods:'POST,GET,DELETE,PATCH,HEAD,PUT',
     credentials:true
   }
