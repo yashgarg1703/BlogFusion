@@ -8,7 +8,7 @@ const path=require('path')
 const Router=require("./router/auth-router")
 const AdminRouter=require("./router/admin-router")
 const connectdb=require("./utlis/db")
-
+const PORT=process.env.PORT || 3000;
 
 
 // Middleware to attach io to request object
@@ -42,8 +42,8 @@ app.use("/admin",AdminRouter)
 
 connectdb().then(()=>
     {
-        app.listen(3000,()=>{
-            console.log("PORT -> 3000 IS ACTIVE")
+        app.listen(PORT,()=>{
+            console.log(`PORT -> ${PORT} IS ACTIVE`)
         })
 })
 
